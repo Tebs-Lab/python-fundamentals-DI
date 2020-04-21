@@ -1,2 +1,2 @@
-s = raw_input('Enter your name: ')
-print 'you entered', s
+name = raw_input('Enter your name: ')
+print 'Hi', name, 'how are you?'

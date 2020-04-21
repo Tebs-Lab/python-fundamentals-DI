@@ -4,7 +4,7 @@ parser = argparse.ArgumentParser(description='argparse example')
 
 parser.add_argument('-a', action="store_true",
                     default=False, help='the a option')
-parser.add_argument('-b', action="store", dest="b", required=True)
+parser.add_argument('-b', action="store", dest="b")
 parser.add_argument('-c', action="store", dest="c", type=int)
 parser.add_argument('--version', action='version', 
                     version='%(prog)s 2.0')
