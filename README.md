@@ -1,1 +1,1 @@
-# LMP
+# Python Fundamentals Course Material
