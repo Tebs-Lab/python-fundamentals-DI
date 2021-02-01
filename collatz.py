@@ -1,15 +1,13 @@
 def collatz(n):
-    if type(n) != int:
-        raise TypeError
-    if n < 1:
+    if n < 1 or type(n) != int:
         raise ValueError
 
     while n != 1:
-        print(n, end=' ')
         if n % 2 == 0:
            n //= 2
         else:
            n = n * 3 + 1
+        yield n
 
-    print(1)
+    return 1
     

@@ -3,8 +3,12 @@ def calculate(operand1, operand2, operator, **kwargs):
         operand1 = float(operand1)
         operand2 = float(operand2)
     else:
-        operand1 = int(operand1)
-        operand2 = int(operand2)
+        try:
+            operand1 = int(operand1)
+            operand2 = int(operand2)
+        except ValueError:
+            print('not a number')
+            return
 
     if operator == '+':
         return operand1 + operand2
@@ -19,11 +23,12 @@ def calculate(operand1, operand2, operator, **kwargs):
             return operand1 // operand2
 
 import sys
+from calculate_module import calculate
 
 if len(sys.argv) >= 4:  
-    if len(sys.argv) == 5:
-        print(calculate(sys.argv[1], sys.argv[2], 
-				sys.argv[3], float=True))
+    if sys.argv[1] == '-f':
+        print(calculate(sys.argv[2], sys.argv[3], 
+                            sys.argv[4], float=True))
     else:
         print(calculate(sys.argv[1], sys.argv[2], sys.argv[3]))
 else:

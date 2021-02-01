@@ -7,3 +7,5 @@ if len(sys.argv) >= 4:
 		 sys.argv[2], sys.argv[3], float=True))
     else:
         print(calculate(sys.argv[1], sys.argv[2], sys.argv[3]))
+else:
+	print('usage')

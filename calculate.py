@@ -1,3 +1,4 @@
+# this is calculate function in a separate file (module)
 def calculate(operand1, operand2, operator, **kwargs):
     useFloat = False
     

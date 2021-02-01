@@ -1,5 +1,5 @@
 def dummy():
-   return 45
+    return 45
 
 def foo():
     print('bar!')
