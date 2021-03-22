@@ -18,3 +18,6 @@
 
 ### Python 2 vs. 3
 * This course used to contain a section about Python 2 vs. 3, and at various points during the course, I'd discuss 2 vs. 3 differences. That section has been removed and I'd recommend only speaking about 2 vs. 3 if students indicate it's a concern. Some teams still have Python 2 codebases, for example.
+
+### Suggested Pacing
+* Fill this in
